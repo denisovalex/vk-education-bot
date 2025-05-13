@@ -10,7 +10,7 @@ def handle_message(vk, event, faq_data):
             response_text = entry["response"]
             break
     else:
-        response_text = "Извините, я не понял ваш вопрос. Попробуйте сформулировать иначе."
+        response_text = "Извините, я не понял ваш вопрос. Пока я умею отвечать только на вопросы из базы FAQ. Кстати, ты можешь изучить её сам, перейдя по ссылке: https://education.vk.company/education_projects"
 
     vk.messages.send(
         user_id=from_id,
